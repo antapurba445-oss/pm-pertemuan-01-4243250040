@@ -1,17 +1,32 @@
-# pm_pertemuan_01_4243250040
+# pm-pertemuan-01-4243250040
 
-A new Flutter project.
+Nama: Febrianta Immanuel Purba | NIM: 4243250040 | Kelas: PSIK 24D
 
-## Getting Started
+## Deskripsi
+Aplikasi Flutter sederhana yang menampilkan Hello World beserta nama, NIM, kelas, 
+dan widget tambahan berupa Card, tombol penghitung (ElevatedButton), dan ikon.
 
-This project is a starting point for a Flutter application.
+## Versi Flutter
+Flutter 3.47.7 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision abaf9c5237 (11 days ago) • 2026-10-08 09:51:21 -0700
+Engine • hash d8a2d6c768c334d53e16277f837970ffa1e2de81 (revision deb287481e) (12 days ago) • 2026-10-07 17:09:12.000Z
+Tools • Dart 3.13.5 • DevTools 2.60.0
 
-A few resources to get you started if this is your first Flutter project:
+## Tangkapan Layar
+### flutter doctor
+![flutter doctor](screenshots/doctor.png)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Aplikasi
+![aplikasi](screenshots/app.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Kendala dan Solusi
+1. **Kendala:** perintah `flutter` tidak dikenali di PowerShell.
+   **Solusi:** mengekstrak Flutter SDK ke folder tanpa spasi, menambahkan folder `flutter\bin` ke PATH, lalu membuka ulang terminal.
+2. **Kendala:** build Android gagal dengan error `Android sdkmanager did not install NDK 28.2.13676358` karena folder NDK rusak (tidak ada `source.properties`).
+   **Solusi:** menghapus folder NDK yang rusak, lalu memasang ulang lewat Android Studio (SDK Manager, SDK Tools, NDK Side by side) sampai selesai.
+
+## Pernyataan Penggunaan AI
+Saya menggunakan Claude sebagai asisten untuk panduan instalasi Flutter, 
+memperbaiki error build (PATH, Android SDK, NDK), dan contoh kode awal. 
+Semua perintah saya jalankan sendiri, kode saya sesuaikan dengan identitas saya, 
+dan saya memahami fungsi widget yang dipakai.
